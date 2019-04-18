@@ -1,14 +1,16 @@
 # spring-security
 
-# Getting Started
+## How to run
 
-### Guides
-The following guides illustrates how to use certain features concretely:
+## How to test
 
-* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
-* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
-* [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
+get accessToken from : 
 
+curl -v \
+-H 'authorization: Basic YXBwOnNlY3JldC1hcHA=' \
+-H 'content-type: application/x-www-form-urlencoded' \
+-d 'grant_type=password&username=user&password=secret' \
+-X POST localhost:8080/oauth/token
+
+
+curl -v -H'authorization:Bearer <token>' localhost:8080/

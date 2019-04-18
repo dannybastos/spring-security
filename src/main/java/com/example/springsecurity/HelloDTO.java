@@ -6,8 +6,11 @@ package com.example.springsecurity;
 public class HelloDTO {
 
 	private String message;
+	
+	public HelloDTO() {	}
 
 	public HelloDTO(String message) {
+		this();
 		this.message = message;
 	}
 
