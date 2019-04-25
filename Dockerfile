@@ -1,4 +1,4 @@
-FROM dannybastos/openjdk13
+FROM dannybastos/openjdk11
 
 MAINTAINER Danny Bastos <danny.bastos.br@gmail.com>
 
