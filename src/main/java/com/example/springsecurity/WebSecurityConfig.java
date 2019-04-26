@@ -20,8 +20,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .disable()
         .authorizeRequests()
             .anyRequest().authenticated()
-//        .and()
-//        	.httpBasic()
+        .and()
+        	.httpBasic()
         .and()
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
          .and()
@@ -30,11 +30,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		//		super.configure(auth);
 		PasswordEncoder passwordEncoder = NoOpPasswordEncoder.getInstance();
 		auth.inMemoryAuthentication()
-			.withUser("adm")
-			.password("pwd")
+			.withUser("admin")
+			.password("admin")
 			.roles("ADM")
 		.and().passwordEncoder(passwordEncoder);
 	}
