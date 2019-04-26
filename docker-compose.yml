@@ -1,7 +1,7 @@
 version: '3.0'
 services:
   web:
-    image: 127.0.0.1:5000/spring-security #to use a local registry
+    image: 127.0.0.1:5000/spring-security-sample-app #to use a local registry
     build: .
     ports:
       - "8080:8080"

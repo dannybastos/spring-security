@@ -1,4 +1,4 @@
-# spring-security
+# Spring-security-sample-app
 
 ## System requirements
 - docker
