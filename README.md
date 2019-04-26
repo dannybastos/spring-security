@@ -1,5 +1,11 @@
 # Spring-security-sample-app
 
+This project has 3 branches:
+
+- oauth2 and master
+- http-basic
+
+
 ## System requirements
 - docker
 - docker-compose
